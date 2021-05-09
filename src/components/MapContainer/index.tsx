@@ -40,13 +40,13 @@ const MapContainer = () => {
   const addTdtLayers = (map: Map) => {
 
     var tiledLayer = new WebTileLayer({
-      urlTemplate: 'http://{subDomain}.tianditu.gov.cn/DataServer?T=vec_w&x={col}&y={row}&l={level}&tk=2cd542d6a2805c1b33c090868b837d2e',
+      urlTemplate: 'http://{subDomain}.tianditu.gov.cn/DataServer?T=vec_w&x={col}&y={row}&l={level}&tk=秘钥',
       subDomains: ["t0", "t1", "t2", "t3","t4", "t5", "t6", "t7"],
     })
 
     var tiledLayer_poi = new WebTileLayer({
       urlTemplate:
-          "http://{subDomain}.tianditu.gov.cn/DataServer?T=cva_w&x={col}&y={row}&l={level}&tk=2cd542d6a2805c1b33c090868b837d2e",
+          "http://{subDomain}.tianditu.gov.cn/DataServer?T=cva_w&x={col}&y={row}&l={level}&tk=秘钥",
       subDomains: ["t0", "t1", "t2", "t3","t4", "t5", "t6", "t7"],
     })
 
